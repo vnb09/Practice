@@ -1,12 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SimonSays
@@ -96,20 +91,12 @@ namespace SimonSays
         }
 
 
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
             pattern.Add(rand.Next(0,4));
             new Thread(playback).Start();
-            
-
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void RED_Click(object sender, EventArgs e)
         {
@@ -129,11 +116,6 @@ namespace SimonSays
         private void BLUE_Click(object sender, EventArgs e)
         {
             testCorrect(3);
-        }
-
-        private void PatternLabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
